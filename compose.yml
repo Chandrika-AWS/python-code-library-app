@@ -1,5 +1,5 @@
----
 services:
+
   db:
     image: chandrika11499/pythonproject:db_image
     deploy:
@@ -19,7 +19,6 @@ services:
       - mynetwork
     depends_on:
       - db
-    
 
   book_service:
     image: chandrika11499/pythonproject:book_image
@@ -31,6 +30,7 @@ services:
       - mynetwork
     depends_on:
       - db
+
   borrow_service:
     image: chandrika11499/pythonproject:borrow_image
     deploy:
