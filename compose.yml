@@ -43,7 +43,7 @@ services:
       - db
 
   frontend:
-    image: chandrika11499/pythonproject:frontend_image
+    image: chandrika11499/pythonproject:app_image
     deploy:
       replicas: 1
     ports:
